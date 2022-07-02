@@ -1,0 +1,209 @@
+ .mobile-view .topic-list {
+
+  //TODO make this dependent on a mobile thumbnail width setting?
+  .right {
+    margin-left: 95px;
+  }
+
+  .pull-right {
+    .keep-in-line {
+      display: inline-block;
+    }
+  }
+
+  .topic-details {
+    max-height: initial;
+    position: relative;
+    padding-left: 10px;
+    min-height: 45px;
+    overflow: hidden;
+  }
+
+  .topic-excerpt {
+    max-height: initial;
+    width: 100%;
+  }
+
+  .topic-category {
+    margin-top: 6px;
+    display: block;
+  }
+
+  .topic-actions {
+    margin-top: 5px;
+    float: left;
+    clear: both;
+    display: flex;
+    align-items: center;
+  }
+
+  .list-button {
+    font-size: 1em;
+    padding: 0 10px 0 0px;
+  }
+
+  .like-count {
+    font-size: 1em;
+    line-height: 1em;
+    float: left;
+    margin-right: 8px;
+  }
+
+  .list-button i {
+    vertical-align: top;
+  }
+
+  img.thumbnail:not(.tiles-thumbnail) {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .discourse-tags {
+    float: initial;
+    clear: initial;
+    margin-right: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+//tiles styling  specific styling
+.mobile-view .tiles-style {
+  tbody {
+    .topic-list-item-separator {
+      display: none;
+    }
+  }
+
+  .tiles-grid-sizer,
+  .tiles-grid-item {
+    // 1 column on all phones
+    width: 100%;
+  }
+
+  .tiles-grid-item-width2 {
+    grid-column-end: span 1;
+  }
+
+  .tiles-gutter-sizer {
+    width: 6px;
+  }
+
+  .topic-title {
+    font-size: 1.143em;
+    grid-area: title;
+    padding: 0 0 0 0;
+
+    .link-top-line {
+      flex: 1 1 auto;
+    }
+
+    a.topic-featured-link {
+      display: block;
+      padding-left: 0;
+      padding-top: 3px;
+    }
+
+    .badge-notification.new-topic {
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .topic-users {
+    grid-area: posters;
+    padding: 0 0 5px 5px;
+
+    .inline {
+      float: right;
+      line-height: 24px;
+      text-align: right;
+
+      .avatar {
+        padding: 0 0 0 0px;
+        margin-right: -2px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  .topic-statuses {
+    float: right;
+  }
+
+  .topic-category {
+    grid-area: category;
+    padding: 0 0 4px 0;
+  }
+
+  .topic-thumbnail {
+    grid-area: photo;
+    padding: 0 0 4px 0;
+  }
+
+  .thumbnail {
+    .no-thumbnail {
+      display: none;
+    }
+  }
+
+  .topic-tags {
+    grid-area: tags;
+  }
+
+  .topic-meta {
+    grid-area: meta;
+  }
+
+  .topic-poster-names a {
+    font-size: 0.9em;
+  }
+
+  div.sub,
+  span.sub {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .topic-list {
+    padding-top: 10px;
+  }
+
+  a.topic-featured-link {
+    display: block;
+    padding-left: 0;
+    padding-top: 3px;
+  }
+
+  .topic-meta {
+    float: left;
+  }
+
+  .topic-actions {
+    grid-area: actions;
+    float: right;
+    justify-content: flex-end;
+    text-align: right;
+    vertical-align: bottom;
+
+    .list-button {
+      font-size: 1em;
+      padding: 0 0 0 10px;
+      color: var(--primary-medium);
+
+      &.has-like,
+      &.topic-like:not([disabled]):hover {
+        color: var(--love);
+      }
+    }
+  }
+}
+
+.topic-thumbnail {
+  float: left;
+  padding-right: 15px;
+
+  .no-thumbnail {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Topic List Previews",
+    "about_url": "",
+    "component": true,
+    "authors": "Robert Barrow, Angus Mcleod",
+    "assets": {
+      "logo": "common/logo.png",
+      "processed": "common/processed.png",
+      "processing": "common/processing.png",
+      "expired": "common/expired.svg",
+      "polygon_icon": "common/polygon_icon.png",
+      "font": "common/FS PFBeauSansPro-Thin.ttf"
+    },
+    "modifiers": {
+      "csp_extensions": ["script_src: https://unpkg.com"],
+      "svg_icons": ["images"],
+      "serialize_topic_excerpts": true,
+      "topic_thumbnail_sizes": [
+        [50, 50],
+        [100, 100],
+        [200, 200],
+        [400, 400],
+        [800, 800]
+      ]
+    },
+    "minimum_discourse_version": "2.5.0.beta4",
+    "color_schemes": {
+      "Solarized Light": {
+        "primary": "586E75",
+        "secondary": "EEE8D5",
+        "tertiary": "268BD2",
+        "quaternary": "CB4B16",
+        "header_background": "002B36",
+        "header_primary": "93A1A1",
+        "highlight": "B58900",
+        "danger": "CB4B16",
+        "success": "859900",
+        "love": "DC322F"
+      }
+   }
+}

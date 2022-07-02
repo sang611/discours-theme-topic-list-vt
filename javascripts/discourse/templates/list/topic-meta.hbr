@@ -1,0 +1,16 @@
+{{#if topic.tags}}
+  <div class="topic-tags">
+    {{discourse-tags topic mode="list"}}
+  </div>
+{{/if}}
+<div class="topic-meta">
+  {{raw-plugin-outlet name="topic-list-tiles-meta"}}
+  <span class="inline sub"></span>
+  <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
+    <a href class='posts-map badge-posts {{likesHeat}}'>{{d-icon "far-comment"}}{{number topic.comment_count}}</a>
+  </div>
+  <div class="topic-views {{topic.viewsHeat}} inline sub {{#if topic.liked }}liked{{/if}}">
+    {{d-icon "heart"}}&nbsp;
+    <span class="like-count">{{number topic.like_count}}</span>
+  </div>
+</div>

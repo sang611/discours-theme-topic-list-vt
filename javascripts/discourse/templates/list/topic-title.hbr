@@ -1,0 +1,4 @@
+{{#if topic.title}}
+  {{dir-span topic.escapedTitle htmlSafe="true"}}
+  <span class="topic-excerpt-more">XEM CHI TIẾT&nbsp;&nbsp;&nbsp;&nbsp;›</span>
+{{/if}}
