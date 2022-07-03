@@ -4,7 +4,7 @@
 
     </ul>
   </div>
-  <ul style="position: absolute; right: 3%;">
+  <ul class="vt-dropdown">
     <li>
       {{vt-dropdown
         onChange=(action "test")
@@ -25,4 +25,8 @@
       action="newPost2"
       label=(theme-prefix 'post.submit')}}
   </div>
+</div>
+
+<div id="loading" style="display: none;">
+  {{conditional-loading-spinner condition=true}}
 </div>
