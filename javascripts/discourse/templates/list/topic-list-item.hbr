@@ -22,7 +22,7 @@
       <div class="topic-title">
         <span>{{raw "list/topic-title" topic=topic}}</span>
       </div>
-      {{#if topic.answer_content}}
+      {{#if topic.answer_user}}
         <div class="topic-answer">
           <span style="font-weight: 600;" class="anwser-user">{{topic.answer_user}}</span></br>
           <span style="font-weight: 600;">TRẢ LỜI</span></br></br>

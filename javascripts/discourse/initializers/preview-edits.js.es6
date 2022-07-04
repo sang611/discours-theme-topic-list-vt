@@ -101,14 +101,14 @@ export default {
           return emojiUnescape(excerpt);
         },
 
-        @discourseComputed("title")
-        escapedTitle(title) {
-          if(title.length > 80){
-            let trimmedText = title.slice(0, 80);
+        @discourseComputed("fancy_title")
+        escapedTitle(fancy_title) {
+          if(fancy_title.length > 80){
+            let trimmedText = fancy_title.slice(0, 80);
             trimmedText = trimmedText.slice(0, Math.min(trimmedText.length, trimmedText.lastIndexOf(" ")));
             return emojiUnescape(trimmedText)+"...";
           }
-          return emojiUnescape(title);
+          return emojiUnescape(fancy_title);
         },
 
         @discourseComputed("title")
