@@ -118,8 +118,8 @@ export default {
 
         @discourseComputed("answer_content")
         escapedAnswerContent(answer_content) {
-          if(answer_content.length > 170){
-            let trimmedText = answer_content.slice(0, 180);
+          if(answer_content.length > 130){
+            let trimmedText = answer_content.slice(0, 130);
             trimmedText = trimmedText.slice(0, Math.min(trimmedText.length, trimmedText.lastIndexOf(" ")));
             return emojiUnescape(trimmedText)+"...";
           }
