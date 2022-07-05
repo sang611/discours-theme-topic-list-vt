@@ -17,7 +17,6 @@ export default {
       $("#create-topic").click()
     },
     test(action){
-      console.log(this)
       switch (action) {
         case "votes":
           // this.toggleProperty("importIdentity");

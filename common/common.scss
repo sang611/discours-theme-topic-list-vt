@@ -41,6 +41,9 @@ body {
     margin: 0px;
     max-width: 100%;
   }
+  #site-logo {
+    height: 28px;
+  }
 }
 
 .contents.has-more > .topic-list.tiles-style tbody {
@@ -148,7 +151,8 @@ body {
 
     .topic-answer {
       margin-top: 10px;
-      font-size: 13px;
+      font-size: 14px;
+      line-height: 17px;
 
       .anwser-user {
         color: #EA0033;
@@ -179,7 +183,7 @@ body {
         text-align: left;
       }
 
-      .star-1 {
+      .star-x {
         position: relative;
         // line-height: 60px;
         display: inline-block;
@@ -191,7 +195,7 @@ body {
         }
       }
 
-      .star-1:before {
+      .star-x:before {
         content: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.09448 1.23416L9.72831 4.56382C9.77937 4.67952 9.89425 4.75666 10.0091 4.76951L13.6597 5.30946C13.966 5.34803 14.0937 5.7337 13.8639 5.95225L11.2217 8.54913C11.1324 8.63912 11.0941 8.75482 11.1196 8.88338L11.7451 12.5473C11.7961 12.8558 11.477 13.0872 11.1962 12.9458L7.92854 11.2231C7.81366 11.1717 7.68603 11.1717 7.58391 11.2231L4.31625 12.9458C4.03544 13.0872 3.71634 12.8558 3.7674 12.5473L4.39285 8.88338C4.41838 8.75482 4.36732 8.63912 4.29073 8.54913L1.64853 5.95225C1.43154 5.7337 1.54642 5.34803 1.85276 5.30946L5.50333 4.76951C5.63097 4.75666 5.73309 4.67952 5.78415 4.56382L7.41797 1.23416C7.55838 0.964188 7.95408 0.964188 8.09448 1.23416Z' stroke='%23E91C35' stroke-width='1.6' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
         width: 10px;
         height: 10px;
@@ -298,6 +302,10 @@ body {
     }
     .user-name {
       text-transform: uppercase;
+      line-height: 25px;
+      float: right;
+      margin-left: 10px;
+      font-weight: 600;
     }
   }
   .tiles-grid-item:hover {
@@ -324,7 +332,7 @@ body {
 
   .topic-title {
     font-size: 23px;
-    font-weight: 300;
+    font-weight: 600;
     grid-area: title;
     padding: 0 0 0 0;
 
@@ -377,6 +385,7 @@ body {
   .topic-category {
     grid-area: category;
     padding: 0 0 4px 0;
+    margin-bottom: 15px;
     font-weight: 600;
     font-size: 13px;
     color: #ffffff;
