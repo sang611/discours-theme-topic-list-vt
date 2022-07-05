@@ -7,10 +7,20 @@
   {{raw-plugin-outlet name="topic-list-tiles-meta"}}
   <span class="inline sub"></span>
   <div class='topic-replies posts-map {{likesHeat}} inline sub' title='{{title}}'>
-    <a href class='posts-map badge-posts {{likesHeat}}'>{{d-icon "far-comment"}}{{number topic.comment_count}}</a>
+      <div class="topic-replies-icon">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.992 1.6C15.992 0.72 15.28 0 14.4 0H1.6C0.72 0 0 0.72 0 1.6V11.2C0 12.08 0.72 12.8 1.6 12.8H12.8L16 16L15.992 1.6ZM12.8 9.6H3.2V8H12.8V9.6ZM12.8 7.2H3.2V5.6H12.8V7.2ZM12.8 4.8H3.2V3.2H12.8V4.8Z" fill="#A4A4A4"/>
+        </svg>
+      </div>
+      {{number topic.comment_count}}</a>
   </div>
   <div class="topic-views {{topic.viewsHeat}} inline sub {{#if topic.liked }}liked{{/if}}">
-    {{d-icon "heart"}}&nbsp;
+    <div class="topic-views-icon">
+      <svg width="12" height="12" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 15L6.84 13.921C2.72 10.1035 0 7.58583 0 4.49591C0 1.9782 1.936 0 4.4 0C5.792 0 7.128 0.662125 8 1.70845C8.872 0.662125 10.208 0 11.6 0C14.064 0 16 1.9782 16 4.49591C16 7.58583 13.28 10.1035 9.16 13.9292L8 15Z"/>
+</svg>
+
+    </div>
     <span class="like-count">{{number topic.like_count}}</span>
   </div>
 </div>

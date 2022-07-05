@@ -69,7 +69,12 @@ body {
     }
     display: grid;
     gap: 28px;
-    grid-template-columns: auto auto auto;
+    @media (min-width:320px)  { grid-template-columns: auto; }
+    @media (min-width:481px)  { grid-template-columns: auto; }
+    @media (min-width:641px)  { grid-template-columns: auto; }
+    @media (min-width:961px)  { grid-template-columns: auto auto; }
+    @media (min-width:1025px) { grid-template-columns: auto auto auto; }
+    @media (min-width:1281px) { grid-template-columns: auto auto auto; }
     grid-auto-rows: 4px;
   }
 
@@ -264,6 +269,7 @@ body {
         background-color: #FFFFFF;
         border-radius: 3px;
         font-weight: 600;
+        height: 17px;
       }
     }
     .topic-excerpt {
@@ -299,6 +305,20 @@ body {
       flex: 0 0 auto;
       float: right;
       margin-left: auto;
+
+      .topic-meta {
+        display: flex;
+        gap: 10px;
+        margin-right: 5px;
+      }
+
+      .topic-views {
+        display: flex;
+        .topic-views-icon {
+          margin-top: 3px;
+          margin-right: 3px;
+        }
+      }
     }
     .user-name {
       text-transform: uppercase;
@@ -443,15 +463,25 @@ body {
 
     .topic-views {
       color: var(--primary-medium);
+      svg {
+        fill: #A4A4A4;
+      }
       &.liked {
         svg {
-          color: red;
+          fill: red;
         }
       }
     }
 
     .topic-replies span {
       padding-left: 3px;
+    }
+    .topic-replies {
+      display: flex;
+      .topic-replies-icon {
+        display: flex;
+        margin-top: 3px;
+      }
     }
     .activity {
       display: none;
@@ -470,6 +500,9 @@ body {
 
   .topic-list {
     padding-top: 10px;
+    &.last-visit {
+      border-bottom: 0.5px solid #D9D9D9;
+    }
   }
 
   .list-tags {
@@ -542,7 +575,7 @@ img.thumbnail {
 
 .like-count,
 .list-vote-count {
-  color: var(--primary-medium);
+  color: #434343;
   font-size: 13px;
   display: inline-block;
   vertical-align: bottom;
@@ -821,6 +854,9 @@ img.select-thumbnail-preview {
   details.vt-dropdown {
     summary {
       background: none !important;
+    }
+    .d-icon {
+      font-size: 30px;
     }
     .select-kit-body {
       margin-top: 8px !important;
