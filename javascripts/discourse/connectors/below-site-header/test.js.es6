@@ -21,10 +21,10 @@ export default {
       switch (action) {
         case "votes":
           // this.toggleProperty("importIdentity");
-          DiscourseUrl.routeTo("mostlike");
+          DiscourseUrl.routeTo("/mostlike");
           break;
         case "newest":
-          DiscourseUrl.routeTo("latest");
+          DiscourseUrl.routeTo("/latest");
           // showModal("reset-key-pair", { model: this.model });
           break;
       }
