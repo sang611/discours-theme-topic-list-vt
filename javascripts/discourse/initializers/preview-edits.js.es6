@@ -232,6 +232,12 @@ export default {
           const obj = PostsCountColumn.create({ topic });
           obj.siteSettings = settings;
           this.set("likesHeat", obj.get("likesHeat"));
+          let votes = new Array(5);
+          console.log(topic.average_voting)
+          for (let i = 0; i < topic.average_voting; i++) {
+            votes[i] = "active"
+          }
+          this.set('votes', votes);
         },
 
         @on("didInsertElement")
