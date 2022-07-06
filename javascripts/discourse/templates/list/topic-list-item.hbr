@@ -11,7 +11,7 @@
     <div class="topic-details {{topic.progress_status}}">
       <div class="topic-header-grid">
         <div class="topic-category">
-          {{#if showCategoryBadge}}
+          {{#if topic.category}}
             {{category-link topic.category}}
           {{/if}}
         </div>

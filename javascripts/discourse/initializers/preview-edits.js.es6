@@ -405,6 +405,7 @@ export default {
         @discourseComputed("category", "topic.isPinnedUncategorized")
         showCategoryBadge(category, isPinnedUncategorized) {
           const isTopic = typeof topic !== "undefined";
+
           return (
             (isTopic || !category || category.has_children) &&
             !isPinnedUncategorized
