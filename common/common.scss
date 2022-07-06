@@ -16,6 +16,14 @@ body {
 .wrap {
   max-width: 1349px;
 }
+.banner-widget {
+  background: url(#{$banner});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 512px;
+  background-position: center;
+}
 .d-header-icons {
   .category {
     font-weight: 300 !important;

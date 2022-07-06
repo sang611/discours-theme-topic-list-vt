@@ -9,7 +9,8 @@
       "processing": "common/processing.png",
       "expired": "common/expired.svg",
       "polygon_icon": "common/polygon_icon.png",
-      "font": "common/FS PFBeauSansPro-Thin.ttf"
+      "font": "common/FS PFBeauSansPro-Thin.ttf",
+      "banner": "common/banner_vt.jpeg",
     },
     "modifiers": {
       "csp_extensions": ["script_src: https://unpkg.com"],
