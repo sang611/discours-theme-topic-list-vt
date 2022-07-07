@@ -10,7 +10,7 @@
       "expired": "common/expired.svg",
       "polygon_icon": "common/polygon_icon.png",
       "font": "common/FS PFBeauSansPro-Thin.ttf",
-      "banner": "common/banner_vt.jpeg",
+      "banner": "common/banner_vt.jpeg"
     },
     "modifiers": {
       "csp_extensions": ["script_src: https://unpkg.com"],
