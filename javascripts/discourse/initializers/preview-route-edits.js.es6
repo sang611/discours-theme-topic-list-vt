@@ -33,6 +33,7 @@ export default {
         `${filterCapitalized}CategoryNone`
       ]);
     });
+
     discoveryTopicRoutes.forEach(function(route){
       var route = container.lookup(`route:discovery.${route}`);
       route.reopen({
@@ -48,6 +49,7 @@ export default {
                 });
 
                 this.controllerFor('discovery').set('featuredTopics', this.featuredTopics);
+                console.log(">>>>>>>>>>>>>>>>>", this.featuredTopics);
               });
             }
             return result;

@@ -1,7 +1,7 @@
 <div class="container">
   {{discourse-banner user=currentUser banner=site.banner}}
   {{#unless viewingCategoriesList}}
-    {{category-read-only-banner category=category readOnly=navigationCategory.cannotCreateTopicOnCategory}}
+  {{category-read-only-banner category=category readOnly=navigationCategory.cannotCreateTopicOnCategory}}
   {{/unless}}
 </div>
 
@@ -18,7 +18,7 @@
 
 {{plugin-outlet name="discovery-above" tagName="span" connectorTagName="div"}}
 
-<div class="container list-container {{if loading "hidden"}}">
+<div class="container list-container {{if loading " hidden"}}">
   <div class="row">
     <div class="full-width">
       <div id="header-list-area">
@@ -28,10 +28,12 @@
     </div>
   </div>
   <div class="row">
+    
     <div class="full-width">
       <div id="list-area">
+        {{form-text-search}}
         {{plugin-outlet name="discovery-list-container-top" tagName="" connectorTagName="span"
-                        args=(hash category=category listLoading=loading)}}
+        args=(hash category=category listLoading=loading)}}
         {{outlet "list-container"}}
       </div>
     </div>
