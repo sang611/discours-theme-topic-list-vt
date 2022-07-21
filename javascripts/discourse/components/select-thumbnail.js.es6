@@ -6,10 +6,7 @@ import discourseComputed from "discourse-common/utils/decorators";
 export default Ember.Component.extend ({
   classNames: 'select-thumbnail',
 
-  @discourseComputed
-  showSelected() {
-    return this.get('buffered.user_chosen_thumbnail_url') ? true : false;
-  },
+  
 
   actions: {
     showThumbnailSelector() {
@@ -26,5 +23,10 @@ export default Ember.Component.extend ({
                popupAjaxError(error);
       });
     }
+  },
+
+  @discourseComputed
+  showSelected() {
+    return this.get('buffered.user_chosen_thumbnail_url') ? true : false;
   }
 })

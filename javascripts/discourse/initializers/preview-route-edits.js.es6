@@ -49,7 +49,7 @@ export default {
                 });
 
                 this.controllerFor('discovery').set('featuredTopics', this.featuredTopics);
-                console.log(">>>>>>>>>>>>>>>>>", this.featuredTopics);
+                
               });
             }
             return result;
