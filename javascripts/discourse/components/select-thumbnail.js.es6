@@ -10,7 +10,6 @@ export default Ember.Component.extend ({
 
   actions: {
     showThumbnailSelector() {
-      console.log("--------------")
       ajax(`/topic-previews/thumbnail-selection.json?topic=${this.get('topic_id')}`).then(result => {
         var controller = showModal('tlp-thumbnail-selector', { model: {
           thumbnails: result,

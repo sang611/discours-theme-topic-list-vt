@@ -5,6 +5,12 @@ import bootbox from "bootbox";
 import DiscourseUrl from 'discourse/lib/url';
 import discourseComputed from "discourse-common/utils/decorators";
 import OpenComposer from "discourse/mixins/open-composer";
+import ComposerEditor, {
+  addComposerUploadHandler,
+  addComposerUploadMarkdownResolver,
+  addComposerUploadPreProcessor,
+} from "discourse/components/composer-editor";
+
 
 export default {
   setupComponent(args, component) {
@@ -14,7 +20,9 @@ export default {
   },
   actions: {
     newPost2(action){
-      $("#create-topic").click()
+      $("#create-topic").click();
+      $('#modal-wrapper').addClass('modal-wrapper')
+      // let controller = showModal('modal-create-topic', {model: {}})
     },
     test(action){
       switch (action) {

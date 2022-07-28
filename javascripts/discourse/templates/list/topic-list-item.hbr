@@ -46,10 +46,14 @@
     <div class="topic-details-controll">
       <div class="users">
         {{avatar topic.creator imageSize="large"}}
-        {{#if topic.creator.name}}
-          <div class="user-name">{{topic.creator.name}}</div>
+        {{#if topic.display_name}}
+          <div class="user-name">{{topic.display_name}}</div>
         {{else}}
-          <div class="user-name">{{topic.creator.username}}</div>
+          {{#if topic.creator.name}}
+            <div class="user-name">{{topic.creator.name}}</div>
+          {{else}}
+            <div class="user-name">{{topic.creator.username}}</div>
+          {{/if}}
         {{/if}}
       </div>
       {{d-button
