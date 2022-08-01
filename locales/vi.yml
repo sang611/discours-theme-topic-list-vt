@@ -13,3 +13,4 @@ vi:
   expired: "Trễ hạn"
   post:
     submit: "GỬI Ý KIẾN"
+    create: "+"

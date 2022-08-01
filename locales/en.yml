@@ -13,3 +13,4 @@ en:
   expired: "Expired"
   post:
     submit: "Send question"
+    create: "+"
