@@ -1023,11 +1023,9 @@ img.select-thumbnail-preview {
       bottom: 40px;
       border-radius: 50%;
       box-shadow: 0 0 10px #ea0033;
-      
+
       &:hover {
-        color: #EA0033;
-        background-color: #fff;
-        border: solid 1px #EA0033;
+        box-shadow: 0 0 15px #ea0033;
       }
     }
   }

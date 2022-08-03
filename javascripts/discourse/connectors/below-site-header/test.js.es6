@@ -10,13 +10,16 @@ import ComposerEditor, {
   addComposerUploadMarkdownResolver,
   addComposerUploadPreProcessor,
 } from "discourse/components/composer-editor";
+import User from "discourse/models/user";
 
 
 export default {
   setupComponent(args, component) {
     component.setProperties({
       label: I18n.t("post.submit"),
+      
     });
+   
   },
   actions: {
     newPost2(action){
