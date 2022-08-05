@@ -215,3 +215,15 @@
 .tiles-style tbody {
   display: grid !important;
 }
+
+.topic-list {
+  padding-top: 10px;
+
+
+  > .topic-list-body > .topic-list-item {
+   
+    &.last-visit {
+      border-bottom: 0.5px solid #D9D9D9 !important;
+    }
+  }
+}
