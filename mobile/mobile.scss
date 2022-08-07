@@ -227,3 +227,11 @@
     }
   }
 }
+
+.banner-widget {
+  background: url(#{$banner_mobile});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  
+}
