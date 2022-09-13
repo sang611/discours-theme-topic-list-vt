@@ -29,7 +29,8 @@ export default {
     withPluginApi("0.8.40", (api) => {
       api.onPageChange(() => {
         loadScript(
-          "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"
+          // 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'
+          `${window.location.protocol + "//" + window.location.host}/javascripts/imagesloaded.js`
         ).then(() => {
           if (document.querySelector(".tiles-style")) {
             imagesLoaded(

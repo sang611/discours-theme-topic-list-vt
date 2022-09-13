@@ -1,0 +1,26 @@
+{{#d-modal-body}}
+<div id="modal-create-wrap">
+    <div id="title-block">
+        <p class="modal-create-label">Tiêu đề</p>
+        <input type="text" name="title-block-input" id="title-create-input">
+    </div>
+    <div id="content-block">
+        <p class="modal-create-label">Nội dung</p>
+
+        {{#d-editor id="content-block-input"}}{{/d-editor}}
+
+    </div>
+</div>
+<div id="action-block">
+    <div id="action-cat">
+
+    </div>
+    <div id="action-send">
+        <input type="text" name="display-name-input" id="display-name-input" placeholder="TÊN HIỂN THỊ">
+        <button id="action-send-btn" {{on "click" (action "sendTopic" )}}>
+            GỬI Ý KIẾN
+        </button>
+    </div>
+</div>
+
+{{/d-modal-body}}
