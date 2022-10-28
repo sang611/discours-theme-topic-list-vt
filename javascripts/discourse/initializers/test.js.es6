@@ -1,18 +1,14 @@
-import { apiInitializer } from "discourse/lib/api";
-import { action } from "@ember/object";
-import { inject as service } from "@ember/service";
 import { withPluginApi } from 'discourse/lib/plugin-api';
-import discourseComputed, {
-  on,
-  observes,
-} from "discourse-common/utils/decorators";
 
-const PLUGIN_ID = "topic-list-previews-t2222c";
+const PLUGIN_ID = "topic-list-test-plugin";
 
 export default {
-  name: 'preview-route-edits2',
+  name: 'test-plugin',
   initialize(container){
-    withPluginApi('0.8.12', api => {
-    });
+    withPluginApi("0.11.1", (api) => this.initWithApi(api));
+  },
+
+  initWithApi(api) {
+    console.log(">>>>> api: ", api);
   }
 };

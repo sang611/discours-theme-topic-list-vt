@@ -15,9 +15,7 @@ export default Component.extend(KeyEnterEscape, {
         
         search(e) {
             console.log($('#form-search-input'));
-            DiscourseUrl.routeTo(`/vtsearch?q=${$('#form-search-input').val()}`);
-           
-            
+            DiscourseUrl.routeTo(`/vtsearch?q=${$('#form-search-input').val()}`); 
         }
     }
 })

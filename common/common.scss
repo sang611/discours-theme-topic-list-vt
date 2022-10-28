@@ -587,14 +587,14 @@ body {
     // }
 
     > .topic-list-body > .topic-list-item {
-     
+
       &.last-visit {
         border-bottom: 0.5px solid #D9D9D9 !important;
       }
     }
   }
 
- 
+
 
   .list-tags {
     padding-right: 10px;
@@ -1126,7 +1126,7 @@ img.select-thumbnail-preview {
       height: 100%;
       margin-right: 10px;
     }
-  
+
     #action-send-btn {
       background: #EA0033;
       border-radius: 300px;
@@ -1136,15 +1136,97 @@ img.select-thumbnail-preview {
       cursor: pointer;
       font-size: 18px;
     }
-  
+
     #action-send-btn:hover {
       background-color: #e92a54;
     }
   }
-
-  
 }
-
+// Nâng cấp chức năng th10
+.navication-control {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #999999;
+  height: 60px;
+  & .vt-dropdown {
+    position: absolute;
+    right: 3%;
+  }
+  & ul {
+    gap: 10px;
+    li {
+      list-style: none;
+    }
+  }
+  & .advance-search {
+    width: 1.3rem;
+    height: 1.3rem;
+    display: inline-block;
+    background-size: 100% 100% !important;
+    background-image: url(#{$icon-search}) !important;
+    margin-top: 2px;
+  }
+}
+.d-search-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1349px;
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 0 minmax(0, 1fr);
+  gap: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+  & .d-search {
+    margin-left: 0;
+    & .search-dropdown-toggle {
+      & a {
+        background: #F5F5F5;
+        border: 1px solid #D9D9D9;
+        border-radius: 100px;
+        padding: 8px 18px;
+      }
+      &.active {
+        & a {
+          background: rgba(234, 0, 51, 0.05);
+          border: 1px solid rgba(234, 0, 51, 0.25);
+          & .d-icon {
+            color: #EA0033;
+          }
+        }
+      }
+    }
+  }
+  & .menu-panel{
+    width: 484px;
+    border-radius: 8px;
+    padding: 0;
+    & .search-input {
+      border-color: transparent;
+      border-bottom: 1px solid #EDEDED;
+      &:focus-within {
+        border-bottom: 1px solid #EDEDED;
+        outline: none !important;
+      }
+      & input {
+        border: unset !important;
+        padding: 0.65em;
+        &:focus {
+          border: none !important;
+          outline: none !important;
+        }
+      }
+    }
+    & .search-menu-assistant {
+      flex-direction: unset;
+    }
+  }
+}
 
 
 

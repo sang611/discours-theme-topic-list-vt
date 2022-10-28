@@ -11,7 +11,8 @@
       "polygon_icon": "common/polygon_icon.png",
       "font": "common/FS PFBeauSansPro-Thin.ttf",
       "banner": "common/banner_vt.jpeg",
-      "banner_mobile": "common/banner_vt_mobile.jpeg"
+      "banner_mobile": "common/banner_vt_mobile.jpeg",
+      "icon-search": "common/advance-search.svg"
     },
     "modifiers": {
       "csp_extensions": ["script_src: https://unpkg.com"],
